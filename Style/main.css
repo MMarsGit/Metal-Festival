@@ -24,10 +24,12 @@ body{
      text-align: center;
      /*background-color: rgb(65, 59, 59);*/
      font-size: 200%;
+     
 }
 
 .title > a{
     color: rgb(245, 228, 228); 
+    text-decoration:  none;
 }
 
 .navBar{
@@ -37,12 +39,14 @@ body{
     color: rgb(245, 228, 228);
     font-size: 150%;
     padding-Bottom: 1%;
+    
 }
 
 .navBar > a{
     padding-left: 5%;
     padding-right: 5%;
     color: rgb(245, 228, 228);
+    text-decoration: none;
 }
 
 .articleHome{
