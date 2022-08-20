@@ -1,0 +1,170 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(27, 25, 25);
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "nav nav nav nav"
+        ". main main ."
+        "footer footer footer footer";
+}
+
+
+.title{
+     grid-area: header;
+     color: rgb(245, 228, 228);
+     text-align: center;
+     background-color: rgb(65, 59, 59);
+     font-size: 200%;
+}
+
+.title > a{
+    color: rgb(245, 228, 228); 
+}
+
+.navBar{
+    grid-area: nav;
+    text-align: center;
+    background-color: rgb(65, 59, 59);
+    color: rgb(245, 228, 228);
+    font-size: 150%;
+    padding-Bottom: 1%;
+}
+
+.navBar > a{
+    padding-left: 5%;
+    padding-right: 5%;
+    color: rgb(245, 228, 228);
+}
+
+.articleHome{
+    grid-area: main;
+    background-color: rgb(65, 59, 59);;
+    color: rgb(245, 228, 228);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "imgheader imgheader"
+        "section section";
+}
+
+.imgheader{
+    grid-area: imgheader;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "imgLeft imgRight";
+}
+
+.imgLeft{
+    grid-area: imgLeft;
+    height: 200px;
+    width: 250px;
+    justify-self: right;
+    padding: 10px;
+}
+
+.imgCentre{
+    grid-area: imgCentre;
+    height: 200px;
+    width: 250px;
+    justify-self: center;
+    padding: 10px; 
+}
+
+.imgRight{
+    grid-area: imgRight;
+    height: 200px;
+    width: 250px;
+    justify-self: left;
+    padding: 10px;
+}
+
+.imgLeft2{
+    grid-area: imgLeft2;
+    height: 200px;
+    width: 250px;
+    justify-self: right;
+    padding: 10px;
+}
+
+.imgCentre2{
+    grid-area: imgCentre2;
+    height: 200px;
+    width: 250px;
+    justify-self: center;
+    padding: 10px; 
+}
+
+.imgRight2{
+    grid-area: imgRight2;
+    height: 200px;
+    width: 250px;
+    justify-self: left;
+    padding: 10px;
+}
+
+.section1{
+    grid-area: section;
+    color: rgb(245, 228, 228);
+    margin: 10px;
+}
+
+.articleAbout{
+    grid-area: main;
+    background-color: rgb(65, 59, 59);
+    color: rgb(245, 228, 228);
+}
+
+.sectionAbout{
+    grid-area: inherit;
+    align-items: right;
+}
+.sectionAboutImg{
+    float: right;
+    padding: 10px;
+    padding-right: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.articleGallery{
+    grid-area: main;
+    background-color: rgb(65, 59, 59);
+    color: rgb(245, 228, 228);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "imgLeft imgCentre imgRight"
+        "imgLeft2 imgCentre2 imgRight2";
+}
+
+.navLineup{
+    text-align: center;
+    font-size: 250%;
+    list-style: none;
+    
+}
+
+.navLineup > li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(245, 228, 228);
+}
+
+.aLineup{
+    color: rgb(245, 228, 228);
+}
+
+footer{
+    
+}
